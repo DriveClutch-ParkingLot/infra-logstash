@@ -4,6 +4,6 @@ COPY logstash.conf /conf/logstash.conf
 COPY start_logstash.sh /
 
 EXPOSE 5000
-EXPOSE 12201
+EXPOSE 12201/udp
 
 CMD ["/start_logstash.sh"]
